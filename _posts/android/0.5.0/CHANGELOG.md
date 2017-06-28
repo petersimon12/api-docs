@@ -1,17 +1,5 @@
 # Changelog
 
-## [0.7.0] - 2017-05-15
-### Changed
-- Joda-Time dependency has been removed from the sample application (was added in [0.5.0])
-
-## [0.6.0] - 2017-04-19
-### Added
-- Track selection API:
-    - Ability to manage subtitles, audio, video tracks
-    - Ability to select specific video formats (resolution, bitrate)
-	- Track selection example in the sample application
-	- Default subtitles are selected and displayed by default
-
 ## [0.5.1] - 2017-03-01
 ### Changed
 - Sample application dependencies changed: Joda-Time added.
