@@ -4998,6 +4998,43 @@ We are in New York City
 				<td>The given video or chapter does not exist.</td>
 			</tr>
 		</table>
+
+		<h4>Upload caption</h4>
+		<table class="table fill-bg-light1 table-chromeless">
+			<tr>
+				<td class="verb">POST</td>
+				<td><a>https://api.ustream.tv/videos/VIDEO_ID/caption.FORMAT</a> (format can be json or xml)</td>
+			</tr>
+		</table>
+
+		<h6>Error codes</h6>
+		<table class="table responsive">
+			<tr>
+				<th>error value</th>
+				<th>HTTP response code</th>
+				<th width="100%">Error conditions</th>
+			</tr>
+			<tr>
+				<td>error_not_valid_vtt_caption</td>
+				<td>400 Bad Request</td>
+				<td>The given file doesn't valid vtt file.</td>
+			</tr>
+			<tr>
+				<td>not_found_language</td>
+				<td>400 Not Found</td>
+				<td>The given file does not contain language.</td>
+			</tr>
+			<tr>
+				<td>unauthorized</td>
+				<td>401 Authorization required</td>
+				<td>Only the video's owner with a valid token can delete chapters.</td>
+			</tr>
+			<tr>
+				<td>not_found</td>
+				<td>404 Not Found</td>
+				<td>The given video or chapter does not exist.</td>
+			</tr>
+		</table>
 	</section>
 
 	<section>
